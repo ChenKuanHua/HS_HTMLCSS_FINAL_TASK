@@ -47,6 +47,10 @@ table {
     border-spacing: 0;
 }
 
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .bar {
     background-color: #f0f0f0;
     display: flex;
@@ -86,7 +90,6 @@ table {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 56px;
 }
 .header h1 {
     background-image: url(https://upload.cc/i1/2021/07/02/IE3cxC.png);
@@ -94,10 +97,10 @@ table {
     background-repeat: no-repeat;
     background-position: center;
     margin-left: 15px;
+    height: 56px;
 }
 .header h1 a{
     display: block;
-    padding: 10px;
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
@@ -107,14 +110,14 @@ table {
 }
 .header ul li {
     font-size: 16px;
-    padding: 10px 0px;
 }
 .header ul li a{
     text-decoration: none;
     display: block;
-    padding: 18px 10px;
+    padding: 22px 10px 16px 10px;
     color: #29d6a8;
     font-weight: bold;
+    border-bottom: 4px solid transparent;
 }
 .header ul li a:hover{
     border-bottom: 4px solid #29d6a8;
@@ -248,7 +251,7 @@ table {
 }
 .contact .detail .btn {
     width: 70px;
-    margin-left: auto;
+    align-self: flex-end;
     background-color: #29d6a8;
     color: #ffffff;
     border-style: none;
@@ -268,7 +271,8 @@ table {
 }
 .footer ul li {
     font-size: 16px;
-    padding: 3px;
+    padding: 3px 0px;
+    width: 250px;
 }
 .footer a {
     color:#e987af;
